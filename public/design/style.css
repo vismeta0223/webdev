@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 500vh;
+    width: auto;
+    overflow-x: hidden;
+}
+.center {
+    align-items: end;
+    justify-content: center;
+    display:flex;
+}
+.own-header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #ff6500;
+    display:flex;
+    align-items: center;
+    z-index: 100;
+    align-items: end;
+    justify-content: right;
+    box-shadow: 0 0.1px 20px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.imglogo {
+    
+    width: 100%;
+    height: 60.5px;
+    align-items: center;
+    justify-content: center;
+}
+.own-navbar {
+    text-align: right;
+    justify-content: right;
+    
+}
+.own-navbar button {
+    padding: 10px 20px; 
+    border-radius: 25px; 
+    display: inline-block; 
+    cursor: pointer; 
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+.signup {
+    color: #612604;
+    background-color: #ffffff;
+    border: 1px solid rgb(185, 185, 185);
+    margin-right: 30px;
+}
+.signin {
+    background-color: #a84604;
+    color: #ffffff;
+    border: 1px solid #973e0a;
+}
+.signin:hover {
+    background-color: #c05710;
+    transition: 0.3s ease-in-out;
+    border: none;
+}
+.signup:hover {
+    background-color: #e6e6e6;
+    color: #ac4002;
+    transition: 0.3s ease-in-out;
+    border: none;
+}
+.orange-box {
+        position: absolute; 
+        width: 100%;
+        height: 750px;
+        /* background: url('../images/back-img.png') no-repeat; */
+        background-size: cover;
+        background-position: center;
+        /* opacity: 0.1; */
+        background: #ff6500;
+        z-index: -10;
+    }
+
+    .floating-image {
+        position: absolute; 
+        animation: hoverAnimation 4s infinite alternate ease-in-out; 
+        
+    }
+    .floating-image-2 {
+        position: absolute; 
+        animation: hoverAnimation2 4s infinite alternate ease-in-out; 
+        
+    }
+    .rider-img {
+        top: 50%;
+        right: 0;
+    }
+    .carry-rider {
+        top: -5%;
+        left: -1%;
+    }
+    .pasta {
+        position: absolute;
+        transform: scale(1.5);
+        left:-150;
+        top: 60%;
+        z-index: -1;
+    }
+    .fastfood {
+        position: absolute;
+        transform: scale(1.3) rotate(-45deg);
+        right: 5;
+        top: 8%;
+        z-index: -1;
+    }
+    .icon-pop {
+        position: absolute;
+        top: 10%;
+        left: 55%;
+    }
+    .icon-pop2 {
+        position: absolute;
+        top: -2%;
+        left: 13%;
+    }
+    .icon-pop3 {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+    .floating-icon {
+        animation: hoverAnimation3 10s infinite alternate ease-in-out;
+        
+    }
+    .floating-icon2 {
+        animation: hoverAnimation4 10s infinite alternate ease-in-out;
+        
+    }
+    .floating-icon3 {
+        animation: hoverAnimation5 10s infinite alternate ease-in-out;
+        
+    }
+    @keyframes hoverAnimation5 {
+        0% {
+            transform: translate(0, 0) scale(0.07);
+        }
+        25% {
+            transform: translate(10px, 10px) scale(0.06);
+        }
+        50% {
+            transform: translate(-20px, -10px) scale(0.07);
+        }
+        75% {
+            transform: translate(10px, -20px) scale(0.06);
+        }
+        100% {
+            transform: translate(0, 0) scale(0.07);
+        }
+    }
+    @keyframes hoverAnimation4 {
+        0% {
+            transform: translate(0, 0) scale(0.07);
+        }
+        25% {
+            transform: translate(-10px, 10px) scale(0.06);
+        }
+        50% {
+            transform: translate(20px, 10px) scale(0.07);
+        }
+        75% {
+            transform: translate(10px, -20px) scale(0.06);
+        }
+        100% {
+            transform: translate(0, 0) scale(0.07);
+        }
+    }
+    @keyframes hoverAnimation3 {
+        0% {
+            transform: translate(0, 0) scale(0.07);
+        }
+        25% {
+            transform: translate(10px, -10px) scale(0.06);
+        }
+        50% {
+            transform: translate(20px, 10px) scale(0.07);
+        }
+        75% {
+            transform: translate(-10px, -20px) scale(0.06);
+        }
+        100% {
+            transform: translate(0, 0) scale(0.07);
+        }
+    }
+    @keyframes hoverAnimation {
+        0% {
+            transform: translate(0, 0) scale(0.7);
+        }
+        25% {
+            transform: translate(10px, -10px) scale(0.7);
+        }
+        50% {
+            transform: translate(20px, 10px) scale(0.7);
+        }
+        75% {
+            transform: translate(-10px, -20px) scale(0.7);
+        }
+        100% {
+            transform: translate(0, 0) scale(0.7);
+        }
+    }
+    @keyframes hoverAnimation2 {
+        0% {
+            transform: translate(0, 0) scale(0.7);
+        }
+        25% {
+            transform: translate(-8px, 10px) scale(0.7);
+        }
+        50% {
+            transform: translate(10px, -10px) scale(0.7);
+        }
+        75% {
+            transform: translate(-20px, 20px) scale(0.7);
+        }
+        100% {
+            transform: translate(0, 0) scale(0.7);
+        }
+    }
+
+
+    .content {
+        background: #ffffff;
+    }
+
+    .orange-box,
+    .content {
+    display: flex; /* Make all sections behave as flex items */
+    flex-direction: column; /* Stack them vertically */
+    }
+
+.col-6 {
+    z-index: 300;
+}
+    
