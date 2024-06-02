@@ -45,18 +45,20 @@ body {
     cursor: pointer; 
     text-align: center;
     margin-left: 10px;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
 .signup {
     color: #612604;
     background-color: #ffffff;
     border: 1px solid rgb(185, 185, 185);
     margin-right: 30px;
+    font-weight: 100;
 }
 .signin {
     background-color: #a84604;
     color: #ffffff;
     border: 1px solid #973e0a;
+    font-weight: 100;
 }
 .signin:hover {
     background-color: #c05710;
@@ -102,8 +104,8 @@ body {
     .pasta {
         position: absolute;
         transform: scale(1.5);
-        left:-150;
-        top: 60%;
+        left:-10%;
+        top: 50%;
         z-index: -1;
     }
     .fastfood {

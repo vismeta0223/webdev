@@ -1,6 +1,4 @@
-<php>
-
-</php>
+@yield('index')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,25 +9,10 @@
     <link rel="stylesheet" href="design/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Home Page</title>
+    <title>@yield('title', 'Custom Auth Page')</title>
 </head>
 <body>
-  
-    
-    <header class="own-header">
-      <div class="col">
-      </div>
-      <div class=" col center">
-        <a href="#" ><img src="images/logo.png" alt="logo" class="imglogo"></a>
-      </div>
-      <div class="col side-nav">
-      <nav class="own-navbar">
-        <button href="#" class="signin">Sign In</button>
-        <button href="#" class="signup">Sign Up</button>
-      </nav>
-      </div>
-      
-    </header>
+  @include('include.header')  
 
 <section class="orange-box"></section>
     <div class="col "> 
@@ -131,17 +114,14 @@
           <div class="footer-section">
               <h4>Popular Categories</h4>
               <ul>
-                  <li><a href="#">Alcohol Delivery</a></li>
+                  <li><a href="alcohol">Alcohol Delivery</a></li>
                   <li><a href="#">Back To School Delivery</a></li>
                   <li><a href="#">Beauty Stores</a></li>
                   <li><a href="#">Beauty Supply</a></li>
                   <li><a href="#">Catering Near Me</a></li>
-                  <li><a href="#">Convenience Stores Canada</a></li>
-                  <li><a href="#">Dashmart Near Me</a></li>
                   <li><a href="#">Deck The Doorstep</a></li>
-                  <li><a href="#">Drugstores Canada</a></li>
                   <li><a href="#">Flower Delivery</a></li>
-                  <li><a href="#">Grocery Delivery Canada</a></li>
+                  <li><a href="#">Grocery Delivery</a></li>
                   <li><a href="#">Halloween</a></li>
                   <li><a href="#">Large Group Orders</a></li>
                   <li><a href="#">Medicine Delivery</a></li>
@@ -149,7 +129,6 @@
                   <li><a href="#">Pet Store Near Me</a></li>
                   <li><a href="#">Retail Stores Near Me</a></li>
                   <li><a href="#">Seasonal Holidays</a></li>
-                  <li><a href="#">Snap Ebt</a></li>
                   <li><a href="#">Valentines Day</a></li>
               </ul>
           </div>
